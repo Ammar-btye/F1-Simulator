@@ -1,0 +1,11 @@
+{
+  "name": "apex-f1-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --directory dist",
+    "test": "node --test tests/model.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/model.js && node --check dist/circuit.js && node --check dist/strategy.js"
+  }
+}
